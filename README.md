@@ -27,7 +27,7 @@ Temporal graphs which are read by the benchmark suite need to have the following
  - Each line of the input must start with the following description of an edge: ID of the origin (tail) node, ID of the destination (head) node, timestamp, all separated by (non-newline) whitespace. 
  - Self-loops and duplicate edges are allowed, however they will be ignored
 Example of a valid temporal network:\
-    0 1 0\
-    1 2 0\
+    0 1 1\
     1 2 1\
-    2 3 2
+    1 2 2\
+    2 3 3
