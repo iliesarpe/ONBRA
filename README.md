@@ -26,7 +26,7 @@ Temporal graphs which are read by the benchmark suite need to have the following
  - Node IDs should be non negative integers (starting from 0 included), such as `42` or `302` are valid node IDs. 
  - Timestamps must be positive integers (strictly greater than 0) but such that they fit inside 64-bit signed integer
  - Each line of the input must start with the following description of an edge: ID of the origin (tail) node, ID of the destination (head) node, timestamp, all separated by (non-newline) whitespace.
- - We assume the input network is pre-processed such that edges appear time-ordered, and nodes appear sequentially, i.e., node id $i$ cannot appear on one edge before $i-1$ has not been seen on some other edge. We will provide a sample code to pre-process each dataset if your dataset does not respect such format.
+ - We assume the input network is pre-processed such that edges appear time-ordered, and nodes appear sequentially, i.e., node id $i$ cannot appear on one edge before $i-1$ has not been seen on some other edge. We provide a script to preprocess a dataset in the folder `utils`.
  - Self-loops and duplicate edges are allowed, however they will be ignored
 Example of a valid temporal network:\
     0 1 1\
