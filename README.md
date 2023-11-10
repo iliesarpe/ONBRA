@@ -1,4 +1,4 @@
-# ONBRA Rigorous Estimation of the Temporal Betweenness Centrality in Temporal Temporal Networks (Santoro and Sarpe, TheWebConf 2022) 
+# ONBRA Rigorous Estimation of the Temporal Betweenness Centrality in Temporal Networks (Santoro and Sarpe, TheWebConf 2022) 
 
 ## How to build
 
@@ -12,7 +12,7 @@
  - Build (see `How to build` above)
  - Use the `./onbra` executable by supplying a graph in the proper format (described below)
  - Use `./onbra -h` to see a list of available flags and options
- - Note: option `-E` selects if you need to compute the Temporal Betweenness for shortest paths (set it to `1`) or for shortest $\delta$-restless walks (set it to `3` and in such case you will also nead the parameter `-D`)
+ - Note: option `-E` selects if you need to compute the Temporal Betweenness for shortest paths (set it to `1`) or for shortest $\delta$-restless walks (set it to `3` and in such case you will also need the parameter `-D`)
   
  Example to use ONBRA for shortest paths with a sample size of 1000 nodes over 10 executions and appending all the results in "result.txt":
  - ./onbra -f <filename> -d -s -E 1 -S 1000 -I 10 &> result.txt
